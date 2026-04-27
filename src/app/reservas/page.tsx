@@ -1,5 +1,5 @@
-import { DashboardPage } from "../page";
+import { ReservasModulePage } from "@/modules/reservas/pages/reservas-page";
 
 export default function Page() {
-  return <DashboardPage initialSection="reservas" />;
+  return <ReservasModulePage />;
 }

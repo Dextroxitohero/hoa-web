@@ -1,5 +1,5 @@
-import { DashboardPage } from "../page";
+import { PanelModulePage } from "@/modules/panel/pages/panel-page";
 
 export default function Page() {
-  return <DashboardPage initialSection="panel" />;
+  return <PanelModulePage />;
 }

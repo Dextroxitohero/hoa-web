@@ -1,5 +1,5 @@
-import { DashboardPage } from "../page";
+import { AmenitiesModulePage } from "@/modules/amenities/pages/amenities-page";
 
 export default function Page() {
-  return <DashboardPage initialSection="amenities" />;
+  return <AmenitiesModulePage />;
 }

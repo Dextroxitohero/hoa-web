@@ -1,5 +1,5 @@
-import { DashboardPage } from "../page";
+import { PrivadasModulePage } from "@/modules/privadas/pages/privadas-page";
 
 export default function Page() {
-  return <DashboardPage initialSection="privadas" />;
+  return <PrivadasModulePage />;
 }

@@ -2,13 +2,14 @@
 
 import * as React from "react";
 import {
-  Building2,
-  CalendarDays,
-  CreditCard,
-  Home,
-  LayoutDashboard,
-  MapPinHouse,
-} from "lucide-react";
+  HiOutlineBuildingOffice2,
+  HiOutlineCalendarDays,
+  HiOutlineCreditCard,
+  HiOutlineHomeModern,
+  HiOutlineMapPin,
+  HiOutlineSquares2X2,
+  HiOutlineUsers,
+} from "react-icons/hi2";
 import {
   Sidebar,
   SidebarContent,
@@ -23,12 +24,13 @@ import {
 import { PrivateCommunitySummary } from "@/modules/privadas/types/private-community";
 
 const modules = [
-  { title: "Panel", href: "/panel", icon: LayoutDashboard },
-  { title: "Privadas", href: "/privadas", icon: Building2 },
-  { title: "Viviendas", href: "/viviendas", icon: Home },
-  { title: "Amenities", href: "/amenities", icon: MapPinHouse },
-  { title: "Reservas", href: "/reservas", icon: CalendarDays },
-  { title: "Pagos", href: "/pagos", icon: CreditCard },
+  { title: "Panel", href: "/", icon: HiOutlineSquares2X2 },
+  { title: "Privadas", href: "/privadas", icon: HiOutlineBuildingOffice2 },
+  { title: "Viviendas", href: "/viviendas", icon: HiOutlineHomeModern },
+  { title: "Amenities", href: "/amenities", icon: HiOutlineMapPin },
+  { title: "Reservas", href: "/reservas", icon: HiOutlineCalendarDays },
+  { title: "Pagos", href: "/pagos", icon: HiOutlineCreditCard },
+  { title: "Usuarios", href: "/usuarios", icon: HiOutlineUsers },
 ];
 
 type AppSidebarProps = React.ComponentProps<typeof Sidebar> & {
@@ -82,7 +84,7 @@ export function AppSidebar({
             {modules.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton tooltip={item.title} render={<a href={item.href} />}>
-                  <item.icon />
+                  <item.icon className="size-4" />
                   <span>{item.title}</span>
                 </SidebarMenuButton>
               </SidebarMenuItem>

@@ -1,7 +1,7 @@
 "use client";
 
 import { PropsWithChildren } from "react";
-import { X } from "lucide-react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -54,7 +54,7 @@ export function Drawer({
             onClick={() => onOpenChange(false)}
             aria-label="Cerrar"
           >
-            <X className="size-4" />
+            <XMarkIcon className="size-4" />
           </Button>
         </header>
         <div className="h-[calc(100%-73px)] overflow-y-auto p-4">{children}</div>
